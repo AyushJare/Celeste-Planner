@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celesté - Bespoke Event Curation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-slate-100 font-sans">
+    <!-- Background Orb Effects -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-slate-500/5 rounded-full blur-3xl animate-pulse"></div>
+    </div>
+
+    <div id="auth-container" class="fixed inset-0 z-50 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950"></div>
+
+    <div class="relative z-10">
+        <!-- Main Container -->
+        <div id="event-setup" class="hidden min-h-screen flex items-center justify-center px-4 py-12">
+            <div class="max-w-2xl w-full"></div>
+        </div>
+
+        <div id="planner-main" class="hidden min-h-screen px-4 md:px-8 py-8">
+            <div class="max-w-7xl mx-auto"></div>
+        </div>
+    </div>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
